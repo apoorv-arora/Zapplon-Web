@@ -1,0 +1,96 @@
+
+  /**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+    font-size: 20px;
+    /*height: 20px;*/
+}
+
+.navbar-fixed-top .navbar-brand {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.navbar{
+   /*background-color:#22252D;*/
+   background-image: none;
+  background-repeat: no-repeat;
+  /*background-color: ;*/
+}
+.navbar-right{
+  margin-right: 20px;
+}
+.special-img 
+{
+    position: relative;
+    top: -5px;
+    float: left;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+}
+.profile-image  {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+
+
+
+
+/*************************
+EXAMPLES 2-7 BELOW 
+**************************/
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+
+}
+
+
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+  top: 50%;
+  display: block;
+  position: relative;
+  height: auto;
+  transform: translate(0,-50%);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+
+
+
+.navbar-nav>li>.dropdown-menu {
+  z-index: 9999;
+}
+
+body {
+  font-family: "Lato";
+}

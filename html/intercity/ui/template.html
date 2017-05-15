@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Template</title>
+		
+		<!--<script>
+  		$(function(){
+    	var includes = $('.include');
+    	jQuery.each(includes, function(){
+      	var file = 'views/' + $(this).data('include') + '.html';
+      	$(this).load(file);
+    	});
+  	});
+		</script>-->
+		<script src="jquery-1.7.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("views/header-user-dropdown.html"); 
+    });
+    </script>
+    <script> 
+    $(function(){
+      $("#includedContent2").load("views/footer.html"); 
+    });
+    </script> 
+	</head>
+		<link href="views/footer.css" rel="stylesheet" type="text/css">
+		<link href="views/bootstrap.css" rel="stylesheet" type="text/css">
+<body>
+<!--
+<div class="include" data-include="header"></div>
+<div class="include" data-include="footer"></div>-->
+<div id="includedContent"></div>
+<footer style="position:relative; margin-top: 60%">
+    <div id="includedContent2"></div>
+</footer>
+</body>
+</html>

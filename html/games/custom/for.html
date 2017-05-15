@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("form").submit(function(){
+        //alert("Submitted");
+        email=$('#email').val();
+           	//e.preventDefault();
+              console.log(email);
+    });
+});
+</script>
+</head>
+<body>
+
+<form action="">
+ <div class="row column log-in-form">
+        <h4 class="text-center">Find your account</h4>
+        <label>Email
+          <input type="text" id="email" name="email" placeholder="somebody@example.com">
+        </label>
+        </div>
+  <input type="submit" class="button expanded clic" value="Submit">
+</form> 
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+/* Main Styles */
+	
+
+	img {
+	    -moz-user-select: none; 
+	    -webkit-user-select: none;
+	    -ms-user-select: none; 
+	    user-select: none; 
+	    -webkit-user-drag: none;
+	    user-drag: none;
+	}
+
+	.animated{
+		visibility:hidden;
+	}
+
+	.visible{
+		visibility:visible;
+	}
+
+/* Background Animation */
+
+	@-webkit-keyframes BackgroundAnimation {
+	    from {background-position: 0px 0px;}
+	    to {background-position: 9600px 0px;}
+	}
+
+	@-moz-keyframes  BackgroundAnimation {
+	    from {background-position: 0px 0px;}
+	    to {background-position: 9600px 0px;}
+	}
+
+	@-ms-keyframes  BackgroundAnimation {
+	    from {background-position: 0px 0px;}
+	    to {background-position: 9600px 0px;}
+	}
+
+
+
+
+/* Containers */
+
+	.container {
+		width: 100%;
+		height: auto;
+		padding:0;
+		margin:0;
+	}
+
+	
+
+/* Positions */
+
+	.relative{
+		position: relative;
+	}
+
+	.absolute{
+		position: absolute;
+	}
+
+	.fixed{
+		position:fixed;
+	}
+
+
+/* Home Section */
+
+	#home{
+		position: relative;
+		width: 100%;
+		height: auto;
+		top:0;
+	}
+
+	.home{
+		background:url(../assets/images/home/taxi.jpg) center center fixed;
+		position: relative;
+	}
+
+	.home:after{
+		clear: both;
+	}
+
+/* Home Section Animated Version */
+
+	.home-animated{
+		background-image:url(../assets/images/homeimg.png);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-attachment: fixed !important;
+		background-repeat: repeat;
+		-webkit-animation: BackgroundAnimation 300s linear infinite;
+		-moz-animation: BackgroundAnimation 300s linear infinite;
+   		 -ms-animation: BackgroundAnimation 300s linear infinite;
+	}
+
+	.hometexts-1{
+		font-size:75px;
+		height:auto;
+		color:white;
+		line-height: 85px;
+	}
+
+	.hometexts-1 .slide-text-1{
+		margin-bottom:0;
+		margin-top:0.5em;
+		width:auto;
+		padding:0;
+	}
+
+	.home-button{
+		display:inline-block;
+		background:rgba(0, 0, 0, 0.3);
+		border:1px solid rgba(0,0,0, 0.3);
+		padding:9px 22px;
+		margin:0 5px;
+		font-size:12px;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		color:#dadada;
+	}
+
+	.home-button:hover{
+		border:1px solid rgba(255,255,255, 0.8);
+		background:rgba(255,255,255, 0.8);
+		color:black;
+	}
+
+
+	.slide-text{
+		margin:3px auto 0;
+	}
+
+	.slide-text li:last-child{
+		clear: both;
+	}
+
+	.hometext{
+		width:100%;
+		height: auto;
+		color:white;
+		font-size:125px;
+		line-height: 110px;	
+	}
+
+/* Fixed Text */
+
+	.fixed-text{
+		font-size: 66px;
+		color:#ffffff;
+		margin:0;
+	}
+
+
+/* Home Parallax Slider Version  */
+
+	#home .v2{
+		width:100%;
+		height: 100%;
+		top:0;
+		z-index: 4;
+		text-align: center;
+	}
+
+	#home .v2 .typographic{
+		height: auto;
+		width:100%;
+		max-width:600px;
+		margin:0 auto;
+		position: relative;
+		top:50%;
+		padding:0 25px;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	
+	#home .v2 .typographic .logo{
+		padding:25px 0;
+	}
+
+/* Home V5  */
+
+	#home .v5{
+		width:100%;
+		height: 100%;
+		top:0;
+		z-index: 4;
+		text-align: center;
+	}
+
+	#home .v5 .typographic{
+		height: auto;
+		width:100%;
+		max-width:970px;
+		margin:0 auto;
+		position: relative;
+		top:50%;
+		padding:0 25px;
+		color:#dfdfdf;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	#home .v5 .typographic .hometexts-5{
+		height: 115px;
+	}
+
+	#home .v5 .typographic .hometexts-5 ul li{
+		font-size:55px;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li{
+		width:44px;
+		height: 37px;
+		position: relative;
+		display: inline-block;
+		opacity: 1;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a{
+		width:44px;
+		height: 37px;
+		position: absolute;
+		display: block;
+		opacity:1;
+		top:5px;
+		background-image: url(../images/v5-arrows.png);
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		transition: all 0.2s;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-prev{
+		left:0;
+		background-position: left top;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-prev:hover{
+		background-position: left bottom;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-next{
+		left:5px;
+		background-position: right top;
+	}
+
+	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-next:hover{
+		background-position: right bottom;
+	}
+/* Typographic Text Options  */
+
+	#home .v2 .typographic h1{
+		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.15);
+		line-height:0.8;
+		font-size:70%;
+		margin:10px 0;
+	}
+
+	#home .v2 .typographic h2{
+		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.15);
+		line-height: 0.9;
+		font-size:80%;
+		margin:10px 0;
+	}
+
+/* TextSlider & Background Slider Version */
+
+	.home-details-tb{
+		width:100%;
+		margin:0 auto;
+		height: auto;
+		top:50%;
+		text-align:center;
+		z-index: 10;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.home-details-tb .home-details-inner{
+		max-width: 90%;
+		margin:0 auto;
+	}
+
+/* Background Slider Images  */
+
+	.slides-container div,
+	.home{
+		background-size:cover;
+	}
+
+	#slides .slides-container div{
+		background-position:center center;
+		background-attachment: fixed;
+	}
+
+	#slides .slides-container .image1{
+		background-image:url(../assets/images/home/homeimg1.png);
+	}
+
+	#slides .slides-container .image2{
+		background-image:url(../assets/images/home/taxi.jpg);
+	}
+	
+	#slides .slides-container .image3{
+		background-image:url(../assets/images/home/homeimg2.png);
+	}
+	
+	#slides .slides-container .image4{
+		background-image:url(../assets/images/home/homeimg3.png);
+	}
+
+	.v2 .home-arrow{
+		margin:0 auto;
+		left:50%;
+		bottom:12%;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.v2 .home-arrow:hover{
+		color:white;
+	}
+
+/* Super Slides Navigation */
+
+	.slides-navigation {
+		margin: 0 auto;
+		position: absolute;
+		z-index: 3;
+		top: 45%;
+		width: 100%;
+		z-index: 20;
+	}
+	.slides-navigation a{
+		position: absolute;
+		display: block;
+		width:36px;
+		height:81px;
+		background:url(../images/slider-arrows.png);
+		opacity:0;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+
+	.slides-navigation a.prev {
+		left: 2%;
+		background-position:left;
+	}
+	.slides-navigation a.next {
+		right: 2%;
+		background-position:right;
+	}
+
+	#home:hover .slides-navigation a{
+		opacity:0.3;
+	}
+
+	.slides-navigation a:hover{
+		opacity:1 !important;
+	}
+
+
+
+
+
+
+
+
+
+/* Flex Slider Direction */
+
+	.project ul.flex-direction-nav{
+		display: block;
+		opacity: 1;
+	}
+
+	.project ul.flex-direction-nav li a{
+		opacity: 1;
+		width:31px;
+		height: 52px;
+		top:50%;
+		background:#1d1d1d center center no-repeat;
+		opacity: 0.8;
+		margin-top:-26px;
+	}
+
+	.project ul.flex-direction-nav li a.flex-prev{
+		left:0;
+		background-image:url(../images/arrow-left.png);
+	}
+	.project ul.flex-direction-nav li a.flex-next{
+		background-image:url(../images/arrow-right.png);
+		right:0;
+		left:auto;
+	}
+
+	.project ul.flex-direction-nav li a:hover{
+		opacity: 1;
+	}
+
+/* Flex Slider Control */
+
+	ol.flex-control-nav{
+		bottom:15px;
+		position: absolute;
+		z-index: 2;
+	}

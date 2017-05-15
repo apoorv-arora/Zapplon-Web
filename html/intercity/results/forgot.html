@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+
+</head>
+<body>
+	<div class="medium-6 medium-centered large-4 large-centered columns " >
+  
+<div id="forform">
+    <form class="clic">
+      <div class="row column log-in-form">
+        <h4 class="text-center">Forgot Password</h4>
+        <label>Email
+          <input type="text" id="email" name="email" placeholder="somebody@example.com">
+        </label>
+        </div>
+        <div id="getpin"></div>
+        <p><input type="submit" class="button expanded " value="Search"></input></p>
+        </form>
+        </div>
+        </div>
+</body>
+</html>
+<script>
+  jQuery(function($){
+           $('.clic').submit(function(e)
+           {
+           	e.preventDefault();
+              email=$('#email').val();
+           	//e.preventDefault();
+              console.log(email);
+              $.ajax({
+              url: "forgot_in.php", 
+              type:'get',
+              dataType:'json',
+              data:{
+               email:email
+              },
+              success: function(result) 
+                {
+                 	console.log(result);
+        			$('#forform').empty();
+        			$('#forform').append('<form class="clicpin"><div class="row column log-in-form"><h4 class="text-center">Forgot Password</h4> <label>Email<input type="text" id="email" name="email" value='+email+'></label>	<label>Enter pin<input type="text" id="pin" name="pin" placeholder="enter your pin"></label></div><div id="getpin"></div><p><input type="submit" class="button expanded " value="Search"></input></p></form>');
+                	console.log("ajax passed");
+             },
+              error:function(){
+                console.log("ajax failed");
+              }
+            });
+           });
+            $('#forform').on('submit','.clicpin',(function(e){
+           	  console.log("entered");
+           	  e.preventDefault();
+              email=$('#email').val();
+              pin=$('#pin').val();
+              console.log(email);
+              console.log(pin);
+              $.ajax({
+              url: "forgotpin.php", 
+              type:'get',
+              dataType:'json',
+              data:{
+               email:email,
+               pin:pin
+              },
+              success: function(result) 
+                {
+                 	console.log(result);
+        			$('#forform').empty();
+        			$('#forform').append(' <form class="reset"><div class="row column log-in-form"></div><label>Enter new password<input type="text" id="newpsw" name="newpsw" placeholder="New Password"></label><p><input type="submit" class="button expanded " value="Search"></input></p></form>');
+                	console.log("ajax passed");
+             },
+              error:function(){
+                console.log("ajax failed");
+              }
+            });
+           }));
+           $('#forform').on('submit','.reset',(function(e){
+           	  e.preventDefault();
+              newpsw=$('#newpsw').val();
+              console.log(email);
+              console.log(pin);
+           	//e.preventDefault();
+              console.log(newpsw);
+              $.ajax({
+              url: "forgot_reset.php", 
+              type:'get',
+              dataType:'json',
+              data:{
+              	email:email,
+              	pin:pin,
+               newpsw:newpsw
+              },
+              success: function(result) 
+                {
+                 	console.log(result);
+        			$('#forform').empty();
+        			$('#forform').append('<form class="clic"><div class="row column log-in-form"><h4 class="text-center">Forgot Password</h4><label>Email          <input type="text" id="email" name="email" placeholder="somebody@example.com"></label></div><div id="getpin"></div><p><input type="submit" class="button expanded " value="Search"></input></p></form>');
+        		//	window.location="forgot.html";
+             },
+              error:function(){
+                console.log("ajax failed");
+              }
+            });
+           }));
+});
+           </script>

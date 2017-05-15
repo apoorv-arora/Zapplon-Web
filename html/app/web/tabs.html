@@ -1,0 +1,225 @@
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+$(document).ready(function(){
+  console.log("enter");
+      function writeAddressName(latLng) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          "location": latLng
+        },
+        function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK)
+          {
+
+            document.getElementById("address").innerHTML = results[0].formatted_address;
+          //alert(results[0].formatted_address)
+        //find country name
+             for (var i=0; i<results[0].address_components.length; i++) {
+            for (var b=0;b<results[0].address_components[i].types.length;b++) {
+
+            //there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+                if (results[0].address_components[i].types[b] == "administrative_area_level_1") {
+                    //this is the object you are looking for
+                    city= results[0].address_components[i];
+                        
+                    if(city.long_name == 'Rajasthan' || city.long_name == 'Bangalore' || city.long_name == 'Delhi')
+                    {
+                        document.getElementById("address").innerHTML = city.long_name+',India';
+                        var x = document.getElementById("address");
+                         if (document.hasFocus()) {
+        //x.innerHTML = "The document has focus.";
+          document.getElementById("address").blur();
+        if(document.hasFocus()){
+          //x.innerHTML="stil";
+        }
+    } else {
+        x.innerHTML = "The document DOES NOT have focus.";
+    }
+            //setTimeout(function(){
+            //$("#s").focus();},30000);
+                        $('#sel2').focus();
+              //          console.log("here");
+                        //document.getElementById("sel2").focus();
+                        //window.setTimeout(function(){el.focus();}, 100);
+                    }
+                    else
+                    {
+                        document.getElementById("address").innerHTML = "pickup city";
+                        document.getElementById("address").focus();
+                    }
+                    break;
+                }
+            }
+        }
+
+        //city data
+        //alert(city.short_name + " " + city.long_name)
+
+          }
+          else
+            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
+        });
+      }
+
+      function geolocationSuccess(position) {
+        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+        // Write the formatted address
+        writeAddressName(userLatLng);
+
+      }
+      function geolocationError(positionError) {
+        document.getElementById("error").innerHTML += "Error: " + positionError.message + "<br />";
+      }
+
+      function geolocateUser() {
+        // If the browser supports the Geolocation API
+        if (navigator.geolocation)
+        {
+          var positionOptions = {
+            enableHighAccuracy: true,
+            timeout: 10 * 1000 // 10 seconds
+          };
+          navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError, positionOptions);
+        }
+        else
+          document.getElementById("error").innerHTML += "Your browser doesn't support the Geolocation API";
+      }
+
+      window.onload = geolocateUser;
+    });
+    </script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+<div >
+  <ul style="margin-left: 400px"   class="nav nav-tabs">
+    <li class="lihead"><a href="#menu1">One Way</a></li>
+    <li><a href="#menu2">Round Way</a></li>
+  </ul>
+</div>
+
+  <div class="tab-content" style="margin-left: 150px">
+
+
+    <div id="menu1" class="tab-pane fade active">
+    <form>
+      <select required>
+        <option value="" disabled selected hidden id="address">Pickup city</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+  <select required>
+        <option value="" disabled selected hidden>drop city</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+
+          <input type="text" id="datepicker" value="Departure">
+            
+<select required>
+        <option value="" disabled selected hidden>Pickup time</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+ 
+           <input type="text" id="datepicke" value="Return" disabled >
+        
+  <input type="submit" value="Search" />  
+     
+</form>
+
+
+    </div>
+  
+
+    <div id="menu2" class="tab-pane fade">
+    <form>
+       <select required>
+        <option value="" disabled selected hidden>Pickup city</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+  <select required>
+        <option value="" disabled selected hidden>drop city</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+        
+          <input type="text" id="datepick" value="Departure">
+
+
+<select required>
+        <option value="" disabled selected hidden>Pickup time</option>
+        <option value="0">New delhi</option>
+        <option value="1">Pune</option>
+    </select>
+ 
+           
+          <input type="text" id="datepic" value="Return"  >
+
+  <input type="submit" value="Search" />  
+     
+
+</form>
+    </div>
+   
+      </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+          <script >
+          $(function() {
+            $( "#datepicker" ).datepicker();
+          });
+
+          $(function() {
+            $( "#datepicke" ).datepicker();
+          });
+           $(function() {
+            $( "#datepick" ).datepicker();
+          });
+
+          $(function() {
+            $( "#datepic" ).datepicker();
+          });
+          </script>
+          
+        <!---/End-date-piker---->
+
+
+
+
+
+

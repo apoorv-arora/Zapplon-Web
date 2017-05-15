@@ -1,0 +1,27 @@
+
+.text-center{
+	margin: 10px;
+}
+.cab-list-item{
+	min-height: 100px;
+	margin: 0px 0px;
+	border-bottom:1px dotted black;
+}
+.book{
+	margin: 10px;
+	border-radius: 0px;
+    width: 140px;
+		background-color: #fdb905;
+    border-color:#fdb905;
+}
+.list-height{
+	min-height:80px;
+}
+@media screen and (max-width: 992px){
+
+.b-right{
+/*
+	border-right: 1px solid black;
+*/
+}
+}

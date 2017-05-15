@@ -1,0 +1,78 @@
+body{
+    background-image: url("citynight.jpg");
+    margin:0;
+    width:100%;
+    overflow-x:hidden;
+}
+.main{
+    height:80vh;
+    width:100%;
+    background-color:#3d3d3d;/*this is the dark grey box*/
+}
+.header{
+    padding:1px;
+}
+.centerBox{
+    position:absolute;
+    top:25vh;
+    width:180vw;
+    left:10vh;
+    /*background-image: url("citynight.jpg")*/
+}
+.menu{
+    color:white;
+}
+ 
+ul{
+    margin:0px 0px 3px 0px;
+    padding:0;
+}
+
+li{
+    display:inline;
+}
+.menu li{
+    margin:0px 10px 0px 3px;
+}
+.active{
+    border-bottom:4px solid white;
+}
+.formBox{
+    background-color:rgba(0,0,0,.5);/*this is the inside box*/
+    border-radius:5px;
+    padding:25px;
+    width:90vw
+}
+.travelType{
+    color:white;
+}
+.travelType li{
+    padding-right:7px;
+}
+select{
+    padding:10px;
+    width:13vw;
+    color:#a2a2a2
+    margin:0;
+    display:inline-block;
+    margin:0vw;
+    height:7vh
+    }
+input[type=date]{
+    border:0px;
+    width:13vw;
+    color:#a2a2a2;
+    margin:0vw;
+    height:6.8vh;
+    padding:0px 10px
+}
+input[type=submit]{
+    padding:12px;
+    width:6vw;
+    color:white;
+    background-color:#24a327;
+    border-radius:0px 5px 5px 0px;
+    border-width:0px;
+    outline:none;
+    height:7vh
+}

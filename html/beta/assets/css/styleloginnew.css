@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
+
+body {font-family: NeueMedium,'Source Sans Pro', sans-serif !important; font-size: 14px; color: #666;}
+
+
+.btn {padding:10px 20px; background: #F4F4F2;}
+.btn_red {background: #ED6347; color: #FFF;}
+
+.btn:hover {background: #E4E4E2;}
+.btn_red:hover {background: #C12B05;}
+
+a.btn {color:#666; text-align: center; text-decoration: none;}
+a.btn_red {color: #FFF;}
+
+.header_title{display: block;font-size: 20px;  margin-bottom: 25px; color:#cbcbcb;font-family: "Times New Roman"}
+/* Popup Styles*/
+.popupHeader {font-size:6px; text-transform: uppercase;display: block;height:20px;}
+.popupHeader { position:relative;text-align:center; padding:10px 20px; border-bottom:0px solid #DDD; font-weight:bold;}
+.modal_close {position: absolute; right: 0; top:0; padding:10px 15px; cursor: pointer; color:#aaa; font-size:16px;}
+
+/* Popup Styles*/
+.popupHeader2 {font-size:16px; text-transform: uppercase;display: block}
+.popupHeader2 {background:#F4F4F2; position:relative;text-align:center; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.modal_close {position: absolute; right: 0; top:0; padding:10px 15px; cursor: pointer; color:#aaa; font-size:16px;}
+
+
+.popupBody {padding:20px;}
+
+.inc{height:200px; margin-top: 20px;}
+/* Social Login Form */
+.social_login {float: right;width: 300px;height: 200px;}
+.social_login .social_box {display:block; clear:both; padding-top:5px; margin-bottom: 10px; background:  #3b5998; overflow: hidden;margin-bottom: 30px;}
+.social_login .social_box2 {display:block; clear:both; padding-top:5px; margin-bottom: 10px; background:  #db4939; overflow: hidden;}
+.social_login .icon {display:block; width: 50px;padding:5px 18px; margin-right: 0px; float:left; color:#FFF; text-align: center;}
+.social_login .fb .icon {background:#3B5998;margin-bottom: 0px;margin-left: 0px}
+.social_login .google .icon {background:#DD4B39;margin-bottom: 0px;margin-top: 0px}
+.social_login .icon_title {cursor:pointer;display:block; padding:5px 0; float:left; font-size: 14px; color:#fff;}
+.social_login .social_box:hover {background: #3b5998;}
+
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+
+.action_btns {clear:both; overflow: hidden;}
+.action_btns a {display: block;}
+
+
+.user_logi {display: none;}
+.user_logi label {display: block; margin-bottom:5px;}
+.user_logi input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_logi input[type="checkbox"] {float:left; margin-right:5px;}
+.user_logi input[type="checkbox"]+label {float:left;}
+
+.user_logi .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+/* User Login Form */
+.user_login {display: none;}
+.user_login label {display: block; margin-bottom:5px;}
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_login input[type="checkbox"] {float:left; margin-right:5px;}
+.user_login input[type="checkbox"]+label {float:left;}
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {width: 90%;text-align: center;display:block; margin-top:10px; clear: both; overflow: hidden; text-decoration: none; color:#ED6347;}
+
+/* User Register Form */
+.user_register {display: none;}
+.user_register label {display: block; margin-bottom:5px;}
+.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="checkbox"] {float:left; margin-right:5px;}
+.user_register input[type="checkbox"]+label {float:left;}
+
+.user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+.modal-body{
+  /*
+  width: 500px;height: 220px;
+*/
+}
+.modal-header{
+
+
+}
+.modal-content{
+
+}
+
+.forgot input[type="text"]{display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+
+@media screen and (max-width: 768px) {
+  .user_logi,#reg,.forgot{ border-right:none !important;}
+  .user_logi input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {width:100%;}
+  .user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"]{width: 100%;}
+  input[type=submit]{width:100% !important;}
+  .forgot_password{width:100%;}
+  .forgot input[type="text"]{width:100%;}
+}

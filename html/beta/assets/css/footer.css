@@ -1,0 +1,101 @@
+footer a:hover{
+  color:grey
+}
+footer ul{
+  list-style-type: none;
+}
+footer a{
+  color:#c1c1c1;
+}
+.logo1 img{
+    width:10%;
+    height:10%;
+}
+footer{
+    width:100%;
+    min-height:100px;
+
+    /*background-color: #222;  This color gets inverted color or you can add navbar inverse class in html */
+  }
+
+.socialIcons{
+    text-align:right;
+    padding-right:20px;
+    padding-top: 5px;
+}
+.socialIcons li{
+    padding-left: 20px;
+}
+.clear {
+
+    clear: both;
+    display: block;
+}
+
+.coll-by-3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.footer-links--big > a{
+text-decoration: none;
+color:grey;
+font-size: 15px;
+padding: 10px 30px 10px 0px;
+}
+.ptop{
+    padding-top: 20px;
+}
+.footer-column {
+    display: inline-block;
+    margin-left: 0;
+    text-align: left;
+    vertical-align: top;
+}
+.footer-right{
+    width: 450px;
+}
+h4, h1, h3 {
+        color: grey;
+        font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.footer-buisness ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.footer-buisness li{
+        display: list-item;
+        height: 25px;
+        width: 160px;
+}
+.footer-buisness a{
+    color: grey;
+    text-decoration : none;
+}
+.footer-column {
+    display: inline-block;
+    margin-top: 20px;
+    /*padding-bottom: 20px;*/
+    text-align: left;
+    vertical-align: top;
+}
+
+.footer-column a{
+
+color:grey;
+font-size: 15px;
+padding: 10px 30px 10px 0px;
+}
+
+ .footer-m{
+    margin-top: 20px;
+    border-bottom: 1px groove rgba(193, 193, 193, 0.4);
+    border-top: 1px groove rgba(193, 193, 193, 0.4);
+}
+.footer-l{
+    margin-top: 20px;
+
+    border-top: 1px groove rgba(193, 193, 193, 0.4);
+}

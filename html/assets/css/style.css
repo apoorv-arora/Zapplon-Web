@@ -1,0 +1,178 @@
+<style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .parallax-bg-1{
+            padding: 300px 0;
+            background-image: url(assets/images/Cab.jpg);
+            background-size: cover;
+            background-position: center;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            overflow: auto;
+            background-attachment: fixed;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        .who{
+            background-image: url(assets/images/web_bg.jpg);
+            background-size: cover;
+            background-position: center;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            overflow: auto;
+            background-attachment: fixed;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        .parallax-bg-1{
+            padding: 300px 0;
+            background-image: url(assets/images/Cab.jpg);
+            background-size: cover;
+            background-position: center;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            overflow: auto;
+            background-attachment: fixed;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        .who{
+            background-image: url(assets/images/web_bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        h4,h1,h3{
+            color:#ff9900;
+            font-family: avenir;
+        }
+
+        .cabs{
+            background-color:white;
+            max-width: 100%;
+            max-height: 100%;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        .nav{
+            display: inline-block;
+            margin: 1em 3em;
+            margin-right: -4px;
+            word-spacing: 4px;
+            margin-left: 2.5em;
+            padding: 0 7em 2em 0;
+            border-width: 2px;
+        }
+        #nav a {
+            text-decoration: none;
+            font-family: avenir;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: normal;
+            letter-spacing: normal;
+            line-height: 1.3em;
+        }
+    } 
+    .font{
+        font-family: avenir;
+        font-size: 16px;
+        color:white;
+    }
+    h2,h6{
+        color:#ff9900;
+    }
+    
+    footer{
+        background-color: white;
+    }
+    
+    #wow{
+        width: 100%;
+        height: auto;
+        background-size: 100% auto !important;
+    }
+
+    .font{
+        font-family: avenir;
+        font-size: 16px;
+        color:white;
+    }
+    h2,h6{
+        color:#ff9900;
+    }
+
+    footer{
+        background-color: white;
+    }
+
+
+
+    a:hover{
+        color:orange;
+    }
+
+    .google-container{
+        width: 500px;
+        height: 400px;
+    }
+    .byline {
+       color: #9799a7;
+       font-family: Georgia, Times, "Times New Roman", serif;
+       font-style: italic;
+       margin-bottom: 18px;
+   }
+
+   </style>
+   <!-- FB like and share -->
+   <style>
+   #inner {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.google-container{
+    width: 500px;
+    height: 400px;
+}
+.byline {
+ color: #9799a7;
+ font-family: Georgia, Times, "Times New Roman", serif;
+ font-style: italic;
+ margin-bottom: 18px;
+}
+.grayscale2{
+    background-color: #676767;
+    background-size: cover;
+    background-position: center;
+    min-width: 992px;  
+    min-height: 150px;
+}
+
+</style>
+<!-- FB like and share -->
+<style>
+#inner {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+
+
+
+</style>

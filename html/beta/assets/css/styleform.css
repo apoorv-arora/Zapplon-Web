@@ -1,0 +1,379 @@
+.act-tnc{
+    display:block !important;
+}/*
+@font-face {
+font-family: NeueHeavy;
+src: url("../fonts/Neue Haas Unica W1G Heavy.otf");
+}
+
+@font-face {
+font-family: NeueLight;
+src: url("../fonts/Neue Haas Unica W1G Light.otf");
+}
+
+@font-face {
+font-family: NeueMedium;
+src: url("../fonts/Neue Haas Unica W1G Medium.otf");
+}
+*/
+@font-face {
+font-family: NeueThin;
+src: url("../fonts/Neue Haas Unica W1G Thin.otf");
+}
+a:hover{
+  text-decoration: none;
+}
+#forgot-msg{
+  line-height: 20px;
+    text-align: center;
+}
+#forform{
+  margin-top: -15px;
+}
+.forgot{
+  border-right:1px solid rgba(0, 0, 0, 0.14);
+}
+#myModal .modal-content{
+  border-radius:0px;margin-top:15%;
+}
+#myModal .modal-header{
+  border-bottom:0px;padding-bottom:0px
+}
+#myModal .modal-dialog{
+  width:90%;
+  max-width:650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#myModal .modal-body{
+  padding-top:0px
+}
+#reg{
+  display: none;border-right:1px solid rgba(0, 0, 0, 0.14);
+}
+.inc{
+  display: table-cell;
+width: 580px;
+vertical-align: middle;
+}
+#coming_soon{
+  width:100%;background-image:url('../images/home/taxi.jpg');background-size:cover;height:100vh;
+}
+#form{
+  /*margin-left: 8%;*/
+  margin-right:0%;
+  width: 100%;
+}
+.user_logi{
+display: inline-block;border-right:1px solid rgba(0, 0, 0, 0.14);
+}
+#login,#signup{
+font-weight:bold;line-height:30px;
+}
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+#submit,#twowaysubmit{
+  border-radius:0px;width:90px;;height:40px;
+  background-color: #fdb905;
+  border-color: #fdb905;
+}
+#datepic,#datepick,#datepicke,#datepicker{
+  font-family: Arial,FontAwesome;
+}
+.ui-state-default,.ui-widget-header{
+  border:none !important;
+  background: none !important;
+}
+.ui-state-active{
+background-color: #ffcf06 !important;
+}
+.ui-state-hover{
+  background-color: #c1c1c1 !important;
+}
+#form1,.twowayform{
+  background-color: rgba(0,0,0,.5);
+
+}
+.twowayform{
+    padding: 30px 0 70px 0;
+  margin-top: 43px;
+}
+#form1{
+    padding: 30px 0 30px 0;
+  margin-top: -1px;
+}
+
+#sel1,#sel2,#sel3,#sel4,#sel5,.d1,.d2,.dl1,.dl2,#sl1,#sl2,#sl3,#sl4{
+    width:13%;
+}
+.spinning{
+  display: none;
+}
+.glyphicon.spinning{
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+.cross{
+  color:rgba(193, 193, 193, 0.57);
+}
+.cross:hover{
+  color:rgb(128, 128, 128);
+}
+.btn:hover{
+  color:#fff;
+}
+body{
+     background:url("images/header_img.jpg");
+    margin:0;
+    width:100%;
+    overflow-x:hidden;
+}
+.main{
+
+
+    margin-left: 7%;
+    margin-top: 8%;
+    width:85%;
+    height: 150px;
+    /*
+    border: 1px solid black;
+
+    background-color:#3d3d3d;/*this is the dark grey box*/
+}
+.header{
+    padding:1px;
+}
+.centerBox{
+    position:absolute;
+    top:25vh;
+    width:180vw;
+    left:10vh;
+
+}
+.menu{
+    color:white;
+}
+
+ul{
+    margin:0px;
+    padding:0;
+}
+
+li{
+    display:inline;
+    height: 50px;
+}
+.menu li{
+    margin:0px 10px 0px 3px;
+}
+.active{
+    /*border-bottom:4px solid white;
+    */
+}
+
+.formBox{
+    align:center;
+    /*this is the inside box*/
+    /*margin-left:auto;
+    margin-right: auto;*/
+    border-radius:5px;
+
+
+}
+.formBox1{
+   /* background-color:rgba(0,0,0,.5);this is the inside box*/
+   background-color:white;
+    border-radius:5px;
+    padding:25px;
+    width:90vw;
+    margin-top: 15%;
+}
+
+.travelType{
+    color:white;
+    display: block;
+}
+
+#oneWay{
+  background-color:transparent;;
+  border-width:0px 0px 0px 0px;
+  padding:4px 12px;
+  width:98px;
+  height: 43px;
+  outline:none;
+  position: relative;
+  align:center;
+
+}
+
+#twoWay{
+  background-color:transparent;;
+  border-width:0px 0px 0px 0px;
+  padding:4px 12px;
+  width:104px;
+  height: 43px;
+  outline:none;
+  position: relative;
+  align:center;
+  margin-left: 1%;
+
+}
+
+.act-btn{
+  border-width:2px 0px 0px 0px !important;
+  border-color:#fdb905;
+  background-color: rgba(0,0,0,.5) !important;
+}
+
+
+select {
+    padding:10px;
+    width:13vw;
+
+    margin:0;
+    display:inline-block;
+    margin:0vw;
+    height: 40px;
+    }
+
+    .d1,.dl1 {
+      color:black;
+      height:40px;
+    }
+    .d2,.dl2 {
+      height:40px;
+    }
+
+#d1{
+    padding:10px;
+    width:13vw;
+    color:#a2a2a2;
+    margin:0;
+    display:inline-block;
+    margin:0vw;
+    height:7vh;
+}
+input[type=submit]{
+    padding:10px;
+    width:90%;
+    color:white;
+    /*background-color:#24a327;*/
+    border-radius:0px;
+    border-width:0px;
+    outline:none;
+    height:40px;
+}
+.twoWay{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+ #sel1,#sel2,#sel3,#sel4,#sel5,#datepicker,#datepicke,#submit,#twowaysubmit,#sl1,#sl2,#sl3,#sl4,#datepick,#datepic{
+    width:33.33%;
+}
+#form1{
+  padding:30px 13% 30px 0px;
+}
+.twowayform{
+  padding: 30px 13% 150px 0px;
+  margin-top: -1px;
+}
+#submit,#twowaysubmit{
+  width:100%;
+}
+.main{
+  height: 250px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+ #sel1,#sel2,#sel3,#sel4,#sel5,#datepicker,#datepicke,#submit,#twowaysubmit,#sl1,#sl2,#sl3,#sl4,#datepick,#datepic{
+    width:80%;
+}
+.twowayform{
+  padding: 30px 13% 30px 0px;
+}
+#submit,#twowaysubmit{
+  width:80%;
+}
+.main{
+  height: 450px;
+}
+
+}
+
+.cabs-header{
+  margin-top: 20px;
+}
+
+.cabs-header .row{
+  width: 96%;
+  margin-left: 2%;
+  display: flex;
+}
+
+.cabs-header button{
+  width:24%;
+  margin-left: 1%;
+  border-radius: 0px;
+  border-width: 1px 1px 3px 1px;
+  color: black;
+  background-color: #fff;
+  border-color: #fdb905;
+}
+.cabs-header button:hover{
+  background-color: #fdb905;
+  border-color: #fdb905;
+}
+.cabs-header button:visited{
+  background-color: #fdb905;
+  border-color: #fdb905;
+}
+.b-right{
+  border-right:1px dotted #fdb905;
+  text-align: right;
+  padding-right: 40px !important;
+}
+.cab-list-item img{
+  width:70%;
+  min-width: 60px;
+}
+.cab-list-item .hi{
+    margin: 10px 0 10px 0;
+    box-shadow: -1px 1px 10px #c1c1c1;
+    padding: 20px 0px 5px 15px;
+}
+.cab-list-item div{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.price-btn{
+    border-radius: 0px;
+    width: 140px;
+    color: black;
+    background-color: #fff;
+    border-color: #fdb905;
+}
+@media screen and (max-width: 992px) {
+  .b-right{
+    border-right:none;
+  }
+  .price-btn{
+    margin-top: 10px;
+  }
+}
+.tncs{
+  display: none;
+  background-color: rgba(193, 193, 193, 0.25);
+    height: 150px;
+    border-width: 1px 0 1px 0;
+    border-color: rgba(47, 31, 1, 0.3);
+    border-style: solid;
+}
